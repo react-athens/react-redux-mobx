@@ -1,0 +1,30 @@
+class Counter extends React.Component {
+  constructor() {
+    super()
+    this.state = { count: 0 }
+  }
+
+  onClick = () => {
+    this.setState({
+      count: this.state.count - 2
+    })
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  render() {
+    return <div>
+      <div>
+        Count:
+        {this.state.count}
+      </div>
+      <button
+        onClick={this.onClick}>
+        Click me
+      </button>
+    </div>
+  }
+}
+
+render(<Counter />, mountNode)
