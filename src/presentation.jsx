@@ -1,5 +1,10 @@
 // Import React
 import React from "react";
+import * as mobx from "mobx";
+import * as mobxReact from "mobx-react";
+import * as redux from "redux";
+import * as reduxReact from "react-redux";
+import { Example } from "./Example";
 
 // Import Spectacle Core tags
 import {
@@ -97,7 +102,7 @@ export default class Presentation extends React.Component {
           </Notes>
         </Slide>
         <Slide>
-          <Image height={400} src={require("./hitcounter.jpg")}>
+          <Image height={400} src={require("./visitors.jpg")}>
           </Image>
           <Notes>
             Actually, there was a time when every self-respecting website
@@ -615,6 +620,14 @@ reducers -->|state| components
           </Notes>
         </Slide>
 
+        {/* PART 3.3: Live coding */}
+        <Slide>
+          <Link href="https://codesandbox.io/embed/5k75mlom34?fontsize=25&hidenavigation=1">Code Sandbox</Link>
+        </Slide>
+        <Slide>
+          <Example />
+        </Slide>
+
         {/* PART 4: Closing words */}
 
         <Slide>
@@ -642,9 +655,9 @@ reducers -->|state| components
           </Notes>
         </Slide>
         <Slide>
-          <Text>
+          <Heading>
             Go out of your comfort zone
-          </Text>
+          </Heading>
           <List>
             <ListItem>Typescript</ListItem>
             <ListItem>CycleJS</ListItem>
@@ -658,16 +671,9 @@ reducers -->|state| components
         </Slide>
         <Slide>
           <Heading>
-
+            Thank you!
           </Heading>
-        </Slide>
-
-        <Slide>
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
-        </Slide>
+        </Slide>        
       </Deck>
     );
   }
