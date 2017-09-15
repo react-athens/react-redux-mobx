@@ -1,0 +1,6 @@
+@observable items = /* ... */
+@observable search = "Lorem"
+
+@computed get filteredItems() {
+  return items.filter(item => item.name === search)
+}

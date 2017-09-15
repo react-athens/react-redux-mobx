@@ -1,0 +1,7 @@
+@observable detailsExpanded = false
+
+autorun(() => {
+  if(detailsExpanded === true) {
+    fetchDetails()
+  }
+})
