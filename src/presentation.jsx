@@ -73,10 +73,7 @@ export default class Presentation extends React.Component {
             React, Redux, MobX
           </Heading>
 
-          <Text>
-            in 30 minutes
-          </Text>
-          <Cite textAlign="right">
+          <Cite textAlign="right" margin="300px 0 0 0">
             Łukasz Wiśniewski
           </Cite>
           <Notes>
@@ -108,6 +105,22 @@ export default class Presentation extends React.Component {
             Actually, there was a time when every self-respecting website
             had to have a counter. But the counting was done on the server side,
             so that doesn't count.
+          </Notes>
+        </Slide>
+        <Slide>
+          <Text>
+            Example: a simple counter
+          </Text>
+          <PlainJS />
+          <Notes>
+            <p>
+              Example: a counter
+            </p>
+            <p>
+              Because they are used in so many places,
+              and are especially useful for selling complex ideas,
+              by making them look simple and easy.
+            </p>
           </Notes>
         </Slide>
         <CodeSlide code={plainJSsource} lang="js" ranges={[
